@@ -1,0 +1,88 @@
+.Combatant{
+    position: relative;
+    border-left: .75rem solid transparent;
+    transition: border .1s;
+}
+.Combatant--active{
+    border-left: .75rem solid #303f9f;
+}
+
+.Combatant__grid{
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding: .75rem .5rem;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.Combatant__row{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 2;
+}
+
+.Combatant label{
+    display: block;
+    width: 100%;
+}
+
+
+.Combatant__init{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.Combatant__name .editable_item:first-child{
+    font-size: 1.4rem;
+}
+
+.Combatant__hp{
+    font-size: 1.25rem;
+}
+.Combatant__ac{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+.Combatant__actions{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: transform .2s;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.Combatant:hover .Combatant__actions, .Combatant:focus-within .Combatant__actions{
+    transform: translateX(0);
+}
+
+
+.Hitpoints{
+    display: flex;
+    text-align: center;
+}
+
+.Hitpoints--half{
+    color: #e64a19;
+}
+
+.Hitpoints--quater{
+    color: #e53935;
+}
+
+.Hitpoints--1{
+    color: #c62828;
+}
+
+.Hitpoints .editable_item{
+    flex: 0 1 auto;
+}

@@ -1,0 +1,21 @@
+.editable_item .label{
+    display: none;
+}
+
+.editable_item .unfocused,
+.editable_item input{
+    width: 100%;
+    display: block;
+    padding: .125em;
+    border: none;
+    text-align: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+.unfocused--placeholder{
+    opacity: 0.7;
+}

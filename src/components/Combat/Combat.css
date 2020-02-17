@@ -1,0 +1,46 @@
+.Combat{
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.Combat__title{
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+.Combat h1,
+.Combat h2,
+.Combat h3{
+    text-align: center;
+}
+
+.Combat__controls{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Combat__main{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.Combat__notes{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.Combat__list{
+    padding: 0;
+    list-style: none;
+    margin: auto;
+}
+.Combat__list li {
+    margin: 0 auto 1.25rem;
+}
+
+.sticky-inner{
+    position: sticky;
+    top: 0;
+}

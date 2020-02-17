@@ -1,0 +1,30 @@
+
+.AppHeaderToggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.AppHeader .backdrop{
+    z-index: 99;
+    color: #fff;
+}
+.AppHeader a,
+.AppHeader .white-btn{
+    color: #fff;
+}
+
+
+.AppHeader nav{
+    font-size: 3.25rem;
+    text-align: center;
+}
+.AppHeader nav ul{
+    padding: 0;
+    margin: auto;
+    list-style: none;
+}
+.AppHeader nav a{
+    font-weight: 600;
+    text-decoration: none;
+}
